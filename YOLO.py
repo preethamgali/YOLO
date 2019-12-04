@@ -182,7 +182,7 @@ def output_to_bounding_box(output):
     bounding_boxes.append(temp)
     return bounding_boxes
   
-  def forward_pass(input_img, is_training=False):
+def forward_pass(input_img, is_training=False):
 
   with tf.variable_scope('model',reuse=tf.AUTO_REUSE):
     # 100x100x1
